@@ -1,0 +1,38 @@
+
+================================================================================
+                    SÚHRN DATASETU PRE DIPLOMOVÚ PRÁCU
+================================================================================
+
+1. ZDROJOVÉ DÁTA:
+────────────────────────────────────────────────────────────────────────────────
+   Dataset: tuke_poruchy_vzorky
+     • Merania (parquet) + Evidencia porúch (CSV)
+     • Poruchy priradené podľa dátumových rozsahov
+
+2. SPRACOVANÝ DATASET (1h granularita):
+────────────────────────────────────────────────────────────────────────────────
+   • Celkový počet záznamov: 1,057,523
+   • Počet unikátnych EIC: 106
+   • Časový rozsah: 2021-04-19 22:00:00+00:00 až 2026-05-10 22:00:00+00:00
+   • Celková dĺžka: 1,847 dní
+
+3. ROZDELENIE PODĽA PRÍZNAKU CHYBA:
+────────────────────────────────────────────────────────────────────────────────
+   Normálne dáta (Chyba=0): 342,180 záznamov, 91 EIC
+   Poruchové dáta (Chyba=1): 715,343 záznamov, 106 EIC
+
+4. SEGMENTY (úseky bez porúch ≥ 8 dní):
+────────────────────────────────────────────────────────────────────────────────
+   • Počet segmentov: 244
+   • Počet EIC: 91
+   • Priemerná dĺžka: 58.4 dní
+   • Medián dĺžky: 31.0 dní
+   • Celkovo trénovacích príkladov: 12,415
+
+5. EXPORTOVANÉ GRANULARITY:
+────────────────────────────────────────────────────────────────────────────────
+   • 10 minút (originál)
+   • 30 minút
+   • 1 hodina
+
+================================================================================
